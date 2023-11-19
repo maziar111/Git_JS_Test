@@ -1,0 +1,87 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maziar Irani</title>
+    <style>
+        #container {
+            width: 400px;
+            height: 400px;
+            position: relative;
+            background: lightblue;
+        }
+
+        #animate {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            background: red;
+        }
+    </style>
+</head>
+
+<body onload="LoadPage()">
+    <h1>Hello, It's Maziar Speaking...</h1>
+    <h2>I will Back to my country......</h2>
+    <h1><a class="mya" href="I will find the way..."></a>This is new.</h1>
+    <img id="img1" />
+    <hr />
+    <p><button onclick="myMove()">Click Me!!!</button></p>
+    <h1 onclick="changText(this)">Click_Click???</h1>
+    <h1 onclick="changText(this)">Click_Click???</h1>
+    <button onclick="this.innerHTML='ooops!!!'">ShowMan</button>
+    <button onmousemove="displayDate()">Date</button>
+    <p id="demo"></p>
+    <button id="myBtn">Maz Button</button>
+    Name is: <input type="text" id="fname" onchange="MyFunction()">
+    <div onmouseover="mOver(this)" onmouseout="mOut(this)" style="background-color: blueviolet; width: 300px; height: 100px; padding: 40px; color: white;">Mouse Over Me???</div>
+</body>
+<script>
+    function mOver(obj)
+    {
+        obj.innerHTML="Thank you ...";
+        obj.style.backgroundColor="blue";
+    }
+
+    function mOut(obj)
+    {
+        obj.innerHTML = "Mouse Over Me...";
+        obj.style.backgroundColor="red";
+    }
+    function MyFunction()
+    {
+        var elem=document.getElementById("fname");
+        elem.value=elem.value.toUpperCase();
+    }
+   
+    function changText(id) { 
+        id.innerHTML = "Be To Hargea";
+    }
+    function displayDate() {
+        document.getElementById("demo").innerHTML = Date();
+    }
+    function myMove() {
+        var elem = document.getElementById("animate");
+        var pos = 0;
+        var id = setInterval(frame, 5);
+        function frame() {
+            if (pos === 350) {
+                //clearInterval(id);
+                pos = 0;
+            }
+            else {
+                pos++;
+                elem.style.top = pos + "px";
+                elem.style.left = pos + "px";
+            }
+        }
+    }
+    function LoadPage()
+    {
+        //alert("پاینده ایران");
+    }
+     
+</script>
+
+</html>

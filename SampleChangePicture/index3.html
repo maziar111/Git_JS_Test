@@ -1,0 +1,74 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maziar Irani</title>
+    <style>
+        #container {
+            width: 400px;
+            height: 400px;
+            position: relative;
+            background: lightblue;
+        }
+
+        #animate {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            background: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hello, It's Maziar Speaking...</h1>
+    <h2>I will Back to my country......</h2>
+    <h1><a class="mya" href="I will find the way..."></a>This is new.</h1>
+    <img id="img1" />
+    <hr />
+    <p><button onclick="myMove()">Click Me!!!</button></p>
+    <div id="container">
+        <div id="animate">
+        </div>
+    </div>
+</body>
+<script>
+    document.getElementById("img1").src = "https://i0.wp.com/bagnidilucca.blog/wp-content/uploads/2011/04/img_7064.jpg?resize=500%2C280";
+    
+    document.getElementById("img1").style.width = "350px";
+    document.getElementsByClassName('mya')[0].style.color = "red";
+    function myMove()
+    {
+        var elem = document.getElementById("animate");
+        var pos=0;
+        var id = setInterval(frame , 5);
+        function frame()
+        {
+            if(pos === 350)
+            {
+                //clearInterval(id);
+                pos=0;
+            }
+            else
+            {
+                pos++;
+                elem.style.top= pos + "px";
+                elem.style.left= pos+"px";
+            }
+        }
+    }
+    (function()
+    {
+     var time = 0 ;
+     var timeId = setInterval(change,3000);
+     function change()
+     {
+        document.getElementById("img1").src = "https://www.elfac.org/wp-content/uploads/2022/11/4-children.png";
+        clearInterval(timeId);
+     }
+
+    })();
+</script>
+
+</html>
