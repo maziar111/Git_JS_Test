@@ -1,6 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 file2-2 bugfix4 x+++-
 =======
 file2-2 bugfix4 x++
 >>>>>>> bugfix4
 text
+=======
+file2-2 bugfix3 x++
+>>>>>>> bugfix3

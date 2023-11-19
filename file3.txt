@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 file3-3 bugfix4-v1
+=======
+file3-3 bugfix3-newv3
+>>>>>>> bugfix3
