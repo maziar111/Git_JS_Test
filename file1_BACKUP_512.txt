@@ -1,6 +1,5 @@
 <<<<<<< HEAD
-file3-3 master
-
+file1_2
 =======
-file3-3 bugfix2-newv2
+file1_3 bugfix2
 >>>>>>> parent of 5e8a9f4 (bugfix4 created)
