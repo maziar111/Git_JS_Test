@@ -1,6 +1,1 @@
-<<<<<<< HEAD
-file3-3 master
-
-=======
-file3-3 bugfix2-newv2
->>>>>>> parent of 5e8a9f4 (bugfix4 created) master again
+git stash add3
