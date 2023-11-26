@@ -1,3 +1,5 @@
-yellow
+yellow green remote repository
 orange
 narenge
+pale green remote repository
+red local repository
